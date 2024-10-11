@@ -44,6 +44,15 @@ MODEL KOMUNIKACJI
   Device-to-Cloud
 Opis: 
   W tym modelu dane z urządzeń (np. czujników temperatury, GPS, RFID) są przesyłane bezpośrednio do chmury, gdzie są przechowywane i analizowane. Dostęp do danych można uzyskać z dowolnego miejsca poprzez internet.
+NORMY
+  Najważniejsze normy, które mogą być kluczowe dla systemu monitorowania dostawców żywności to:
+
+ISO/IEC 30141 i IEEE P2413 – jako ogólne ramy architektoniczne dla systemów IoT.
+ISO 22000 – dotycząca bezpieczeństwa żywności.
+IETF protokoły (MQTT, CoAP) – do wydajnej i bezpiecznej komunikacji.
+ISO/IEC 27001 – dla zapewnienia bezpieczeństwa danych.
+Stosowanie się do tych norm zapewni zgodność z regulacjami, bezpieczeństwo i wysoką jakość działania systemu.
+
   Zastosowanie w systemie monitorowania dostawców:
   Dane o warunkach dostawy (temperatura, wilgotność, lokalizacja GPS) mogłyby być bezpośrednio przesyłane do centralnego serwera lub platformy chmurowej (np. AWS IoT, Google Cloud, Azure IoT Hub).
   Restauracje mogą monitorować te dane w czasie rzeczywistym i otrzymywać alerty, np. w przypadku przekroczenia temperatury lub opóźnień.
