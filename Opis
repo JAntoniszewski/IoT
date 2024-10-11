@@ -1,0 +1,59 @@
+ZAŁOŻENIA
+
+  1.Weryfikacja dostawców
+    Certyfikacja: Sprawdzenie, czy dostawcy posiadają odpowiednie certyfikaty jakości (np. HACCP, ISO).
+    Ocena reputacji: Analiza opinii i doświadczeń innych restauracji, które współpracowały z danym dostawcą.
+    Zgodność z przepisami: Upewnienie się, że dostawca spełnia wszystkie wymogi prawne, sanitarno-higieniczne oraz normy dotyczące transportu i przechowywania żywności.
+  2. Kontrola jakości produktów
+    Badania laboratoryjne: Regularne badanie próbek dostarczanych produktów pod kątem zanieczyszczeń, bakterii, chemikaliów.
+    Świeżość produktów: Monitorowanie terminu przydatności oraz warunków przechowywania (np. kontrola temperatury podczas transportu).
+    Zgodność z zamówieniem: Sprawdzanie, czy dostarczone produkty odpowiadają specyfikacjom zamówienia (jakość, ilość, gatunek).
+  3. Zarządzanie logistyką
+    Śledzenie dostaw: Użycie systemów do śledzenia i monitorowania procesu dostawy, aby zapewnić punktualność oraz odpowiednie warunki transportu (chłodnictwo, wilgotność).
+    Alternatywni dostawcy: Wprowadzenie systemu zastępczych dostawców w przypadku opóźnień lub problemów z jakością.
+    Rejestrowanie odstępstw: Dokumentowanie wszelkich niezgodności, np. opóźnień w dostawach lub problemów z jakością.
+  4. Bezpieczeństwo i higiena
+    Szkolenia personelu: Regularne szkolenia dla pracowników restauracji w zakresie bezpiecznego obchodzenia się z żywnością, co może obejmować sprawdzanie jakości dostaw.
+    Monitorowanie warunków transportu: Sprawdzanie, czy dostawcy stosują odpowiednie środki transportu, które zapewniają zachowanie bezpieczeństwa i jakości produktów (np. chłodzenie, ochrona przed kontaminacją).
+  5. Audyt i raportowanie
+    Regularne audyty: Przeprowadzanie wewnętrznych i zewnętrznych audytów, aby sprawdzić zgodność dostawców z przyjętymi normami.
+    Raportowanie wyników: Dokumentowanie wszystkich wyników inspekcji, badań i audytów, co pozwala na identyfikowanie trendów i potencjalnych problemów.
+  6. Współpraca długoterminowa
+    Budowanie relacji z dostawcami: Dążenie do nawiązywania długofalowych i stabilnych relacji z wyselekcjonowanymi dostawcami, co ułatwia zarządzanie jakością.
+    Ustalanie standardów: Wspólne ustalanie wymagań i standardów, które dostawcy muszą spełniać, aby kontynuować współpracę.
+KOMPONENTY SYSTEMU IOT
+  1.Arduino Uno
+  2.Czujnik temperatury i wilgotności
+  3.Czujnik odległości ultradźwiękowy
+  4.Moduł GPS 
+  5.Czujnik RFID
+  6.Moduł Wi-Fi
+  7.Moduł GSM
+  8.Moduł zasilania 5V/3.3V 
+  9.Bateria LiPo
+  10.Wyświetlacz LCD 16x2 z interfejsem I2C
+  11.Przekaźnik 5V
+  12.Dioda LED
+  13.Buzzer
+  14.Moduł RTC (DS3231)
+  15.Moduł HX711 z czujnikiem tensometrycznym
+  16.Ethernet Shield
+  17.Potencjometr
+  18.Moduł karty SD
+MODEL KOMUNIKACJI
+  Device-to-Cloud
+Opis: 
+  W tym modelu dane z urządzeń (np. czujników temperatury, GPS, RFID) są przesyłane bezpośrednio do chmury, gdzie są przechowywane i analizowane. Dostęp do danych można uzyskać z dowolnego miejsca poprzez internet.
+  Zastosowanie w systemie monitorowania dostawców:
+  Dane o warunkach dostawy (temperatura, wilgotność, lokalizacja GPS) mogłyby być bezpośrednio przesyłane do centralnego serwera lub platformy chmurowej (np. AWS IoT, Google Cloud, Azure IoT Hub).
+  Restauracje mogą monitorować te dane w czasie rzeczywistym i otrzymywać alerty, np. w przypadku przekroczenia temperatury lub opóźnień.
+  Odpowiedni dla sytuacji, gdy dane mają być dostępne globalnie lub dla wielu jednostek.
+Zalety:
+  Skalowalność – można łatwo dodawać kolejne urządzenia.
+  Możliwość analizy danych na większą skalę i przechowywanie dużych ilości danych.
+  Zdalny dostęp do danych w czasie rzeczywistym.
+Wady:
+  Wymaga stałego połączenia z internetem.
+  Możliwość opóźnień związanych z przetwarzaniem danych w chmurze.
+Przykład:
+  Moduł Wi-Fi (np. ESP8266 lub ESP32) przesyła dane o temperaturze do platformy chmurowej, która generuje alerty na podstawie tych danych.
